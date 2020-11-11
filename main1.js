@@ -1,22 +1,22 @@
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext('2d');
 
-ctx.fillStyle = "rgb(200,171,36)";
+ctx.fillStyle = "rgb(42,182,17)";
 
 
 var butFill = document.getElementById("butFill");
 butFill.addEventListener('click', moverRectangulo );
 
 var imagenFondo = new Image();
-imagenFondo.src ='';
+imagenFondo.src ='https://i.imgur.com/xG4KhmT.png';
 
-const LIMITE_CARGA = 60
+const LIMITE_CARGA = 448;
 
 var rect = {
-    posX : 30,
-    posY : 460,
-    ancho : 300,
-    alto :  10
+    posX : 81,
+    posY : 10,
+    ancho : 10,
+    alto :  26
 }
  
 pintarImagenDeFondo();
@@ -33,8 +33,8 @@ function moverRectangulo(){
                clearInterval(interval);
                interval = null;
            }
-            rect.posY -= 0.5;
-            rect.alto += 0.5;
+            rect.posX += 0.3;
+            rect.ancho -= 0.3;
             limpiarTablero()
             pintarRectangulo(rect);
             pintarImagenDeFondo();
@@ -48,7 +48,7 @@ function moverRectangulo(){
 }
 
 function rectanguloEstaEnElLimite(){
-    return rect.posY <= LIMITE_CARGA;
+    return rect.posX >= LIMITE_CARGA;
 }
 
 function limpiarTablero(){

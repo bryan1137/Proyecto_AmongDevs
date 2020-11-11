@@ -1,3 +1,56 @@
+* {
+    text-align:center;
+}/*
 canvas{
     background-color: #000000;
+    
+}*/
+/*Tarea Gasolina*/
+.botonGasolina{
+ background-image: url(./img/botonGasolina.png);
+ height: 122px;
+ width: 122px;
 }
+/*Download/Upload Data*/
+.ubicacion{
+    height: 50px;
+    padding-top: 273px;
+    width: 60px;
+    padding-left: 892px;
+}
+.fondo{
+    background-image: url(./img/FondoAdmin.png);
+}
+.fondo-tarea{
+    background-image: url(./img/FondoAdminOsc.jpg)
+}
+
+.botonDownloand{
+    display: inline-block;
+    background-image: url(./img/iconoWifi.png);
+    height: 47px;
+    width: 57px;
+    border: 2px solid white;
+    
+    
+}
+a.botonDownloand:hover{
+    border: none;
+}
+.arriba{
+  background-image: url(https://i.imgur.com/mQZEM81.gif);
+  background-size: 600px 237.76px;
+  height: 237.76px;
+    width: 600px;
+  margin-left: 492px;
+  margin-top: 120px;
+  
+}
+.barra{
+    background-image: url(https://i.imgur.com/xG4KhmT.png);
+    background-size: 600px 162.24px;
+    margin-left: 492px;
+    height: 162.24px;
+    width: 600px;
+}
+
